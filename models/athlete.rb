@@ -39,12 +39,9 @@ def self.map_items(sql)
   return result
 end
 
-
-
-
-
-
-
-
+def self.map_items(sql)
+  result = Athlete.map_items(sql)
+  return result.first
+end
 
 end
