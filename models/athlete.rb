@@ -28,6 +28,19 @@ def self.all()
   return Athlete.map_items(sql)
 end
 
+def self.delete_all()
+  sql = "DELETE FROM athletes"
+  SqlRunner.run(sql)
+end
+
+def self.map_items(sql)
+  athlete = SqlRunner.run(sql)
+  result = athlete.map { |name| Athlete.new(name)}
+  return result
+end
+
+
+
 
 
 
