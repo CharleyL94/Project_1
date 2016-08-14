@@ -3,7 +3,7 @@ require_relative('../db/sql_runner')
 
 class Athlete
 
-  attr_reader :id, :name, :nation, :event
+  attr_reader :id, :name, :nation, :event  #or :nation_id
 
 def initiaalize(options)
 @id = options['id'].to_i
@@ -17,6 +17,9 @@ def save()
   athlete = SqlRunner.run(sql).first
   @id = athlete['id']
 end
+
+# def what event or nation??
+# what inner join table and what name?
 
 def self.find(id)
   sql = "SELECT * FROM athletes WHERE id = #{id}"
