@@ -17,5 +17,15 @@ end
 get '/athletes/:id/edit' do
 end
 
+post '/athletes' do
+  @athlete = Athlete.new(params)
+  @athlete.save
+  redirect to("athletes")
+end
 
+post '/athletes/:id' do
+end
+
+delete '/athletes' do
+end
 
