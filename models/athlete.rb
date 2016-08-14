@@ -23,6 +23,11 @@ def self.find(id)
   return Athlete.map_items(sql)
 end
 
+def self.all()
+  sql = "SELECT * FROM athletes"
+  return Athlete.map_items(sql)
+end
+
 
 
 
