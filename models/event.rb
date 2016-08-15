@@ -3,16 +3,15 @@ require_relative('../db/sql_runner')
 
 class Event
 
-  attr_reader :id, :name, :medals
+  attr_reader :id, :name
 
   def initialize( options )
     @id = options['id'].to_i
     @name = options['name']
-    @medals = options['medals']
   end
 
   def save()
-    sql = "INSERT INTO events (name, medals) VALUES ('#{@name}', '#{@medals}' ) RETURNING *"
+    sql = "INSERT INTO events ( name ) VALUES ('#{@name}' ) RETURNING *"
     member = SqlRunner.run(sql).first
     @id = member['id']
   end

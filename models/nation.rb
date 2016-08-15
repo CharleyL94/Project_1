@@ -23,7 +23,7 @@ class Nation
 
   def save()
     sql = "INSERT INTO nations (name) VALUES ('#{@name}') RETURNING *"
-    nations = SqlRunner.run(sql).frist
+    nation = SqlRunner.run(sql).first
     @id = nation['id']
   end
 
@@ -48,13 +48,13 @@ class Nation
   end
 
   def self.map_items(sql)
-    athlete = SqlRunner.run(sql)
-    result = athlete.map { |name| Athlete.new(name) }
+    nation = SqlRunner.run(sql)
+    result = nation.map { |name| Nation.new(name) }
     return result
   end
 
   def self.map_item(sql)
-    result = Athlete.map_items(sql)
+    result = Nation.map_items(sql)
     return result.first
   end
   

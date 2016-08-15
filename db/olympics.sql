@@ -23,9 +23,7 @@ CREATE TABLE events (
 );
 
 CREATE TABLE participations (
-id serial4 PRIMARY KEY,
-athlete_id int4 references athletes(id) ON DELETE CASCADE,
-event_id int4 references events(id) ON DELETE CASCADE
-
-
+  id serial4 PRIMARY KEY,
+  athlete_id int4 references athletes(id) ON DELETE CASCADE,
+  event_id int4 references events(id) ON DELETE CASCADE
 );

@@ -5,15 +5,14 @@ class Athlete
 
   attr_reader :id, :name, :nation, :event  #or :nation_id
 
-def initiaalize(options)
-@id = options['id'].to_i
-@name = options['name']
-@nation = options['nation']
-@event = options['event']
+def initialize(options)
+  @id = options['id'].to_i
+  @name = options['name']
+  @nations_id = options['nations_id']
 end
 
 def save()
-  sql = "INSERT INTO athletes (name, nation,event) VALUES ('#{@name}', '#{@nation}', '#{@event}') RETURNING *"
+  sql = "INSERT INTO athletes (name, nations_id ) VALUES ('#{@name}', '#{@nations_id}') RETURNING *"
   athlete = SqlRunner.run(sql).first
   @id = athlete['id']
 end

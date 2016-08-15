@@ -1,7 +1,7 @@
 require_relative('../models/athlete')
 
 get '/athletes' do
-  @athlete = Athlete.all
+  @athletes = Athlete.all
   erb(:'athletes/index')
 end
 
