@@ -1,7 +1,12 @@
-<div>
-  <h1>Name:<%= @athlete.name %></h1>
-  <h2>Event: <%= @athlete.event %></h2>
-  <h2>Nation: <%= @athlete.nation %></h2>
+<b>Name:</b>
+<p><%= @athlete.name %></p>
+<b>Nation:</b>
+<p><%= @athlete.nation %></p>
+
+<a href="/athlete/<%= @athlete.id %>/edit">Edit</a>
+
+<form action="/athlete/<%= @athlete.id %>/delete" method="post">
+  <input type="submit" value="delete"></input>
 
   
 
@@ -12,4 +17,3 @@
 
 
 
-</div>

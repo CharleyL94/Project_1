@@ -2,9 +2,9 @@
 
   <% @athletes.each do |athlete| %>
     <b>Name:</b>
-    <p><%= athlete.name() %></p>
+    <p><%= @athlete.id() %></p>
     <b>Nation:</b>
-    <p><%= athlete.nation %></p>
+    <p><%= @athlete.nation %></p>
     <a href="/athlete/<%= athlete.id%>">View</a>
    <hr>
    <% end %>
