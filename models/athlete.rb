@@ -17,8 +17,6 @@ def save()
   @id = athlete['id']
 end
 
-# def what event or nation??
-# what inner join table and what name?
 
 def self.find(id)
   sql = "SELECT * FROM athletes WHERE id = #{id}"
@@ -45,5 +43,13 @@ def self.map_item(sql)
   result = Athlete.map_items(sql)
   return result.first
 end
+
+
+def nation
+ sql = "SELECT * FROM nations WHERE id = #{@nations_id}"
+ nation = SqlRunner.run(sql).first 
+ result = Nation.new(nation)
+ return result
+ end
 
 end

@@ -16,10 +16,6 @@ class Event
     @id = member['id']
   end
 
-  # def ?()
-  #   sql = ""
-  #   return ?.map_items(sql)
-  # end
 
   def self.all()
     sql = "SELECT * FROM events"
