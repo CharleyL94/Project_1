@@ -1,0 +1,11 @@
+<h1>Edit Nation</h1>
+
+<form action="/nations/<%= @athlete.id %>" method="post">
+  <label for="name">Name:</label>
+  <input type="text" name="name" value="<%= @nation.name %>" >
+
+  <label for="Nation">Nation:</label>
+  <input type="text" name="Nation" value="<%= @nation.name%>" >
+
+  <input type='submit' value="Update">
+  </form>
