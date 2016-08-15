@@ -27,10 +27,11 @@ class Nation
     @id = nation['id']
   end
 
-  # def ?what to put here?()
-  #   sql = ?
-  #   return ?.map_items(sql)
-  # end
+ def athletes
+  sql = "SELECT a.* FROM athletes a WHERE a.nation_id = #{@id}"
+  return SqlRunner.run(sql).map {|athlete| Athlete.new(athlete)}
+  end
+
 
   def self.find(id)
     sql = "SELECT * FROM nations WHERE id = #{id}"
