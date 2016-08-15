@@ -41,3 +41,17 @@ athlete13.save
 athlete14.save
 athlete15.save
 
+event1 = Event.new({'name' => '100 metres', 'gold_id' => 'athlete1.id', 'silver_id' => 'athlete2.id', 'brozne' => 'athlete3.id'})
+event2 = Event.new({'name' => 'Heptathlon', 'gold_id' => 'athlete4.id', 'silver_id' => 'athlete5.id', 'brozne' => 'athlete6.id'})
+event3 = Event.new({'name' => 'Golf''gold_id' => 'athlete7.id', 'silver_id' => 'athlete8.id', 'brozne' => 'athlete9.id'})
+event4 = Event.new({'name' => 'Pommel Horse' 'gold_id' => 'athlete10.id', 'silver_id' => 'athlete11.id', 'brozne' => 'athlete12.id'})
+event5 = Event.new({'name' => 'All round individual Gymanst''gold_id' => 'athlete13.id', 'silver_id' => 'athlete14.id', 'brozne' => 'athlete15.id'})
+
+event1.save
+event2.save
+event3.save
+event4.save
+event5.save
+
+
+
