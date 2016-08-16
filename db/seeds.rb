@@ -36,12 +36,26 @@ athlete7 = Athlete.new({'name' => 'Eleftherios Petrounias', 'nations_id' => nati
 athlete1.save
 athlete2.save
 athlete3.save
+athlete4.save
+athlete5.save
+athlete6.save
+athlete7.save
 
-event1 = Event.new({'name' => '100 metres', 'gold_id' => athlete1.id, 'silver_id' => athlete2.id, 'bronze' => athlete2.id})
-event2 = Event.new({'name' => 'Heptathlon', 'gold_id' => athlete2.id, 'silver_id' => athlete1.id, 'bronze' => athlete1.id})
+event1 = Event.new({'name' => '100 metres'})
+event2 = Event.new({'name' => 'Heptathlon'})
+event3 = Event.new({'name' => 'Mens Pommel Horse'})
+event4 = Event.new({'name' => 'Trampoline'})
+event5 = Event.new({'name'=>'Mens 73kg Judo'})
+event6 = Event.new('name'=>'Womens Individual Archery')
+event7 = Event.new('name'=>'Gymnast Rings')
 
 event1.save
 event2.save
+event3.save
+event4.save
+event5.save
+event6.save
+event7.save
 
 binding.pry
 nil
