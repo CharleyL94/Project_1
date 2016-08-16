@@ -2,7 +2,7 @@ require('pry-byebug')
 require_relative('../models/athlete.rb')
 require_relative('../models/event.rb')
 require_relative('../models/nation.rb')
-require_relative('../models/participation.rb')
+# require_relative('../models/participation.rb')
 
 Athlete.delete_all()
 Event.delete_all()
@@ -30,8 +30,8 @@ event2 = Event.new({'name' => 'Heptathlon'})
 event3 = Event.new({'name' => 'Mens Pommel Horse'})
 event4 = Event.new({'name' => 'Trampoline'})
 event5 = Event.new({'name'=>'Mens 73kg Judo'})
-event6 = Event.new('name'=>'Womens Individual Archery')
-event7 = Event.new('name'=>'Gymnast Rings')
+event6 = Event.new({'name'=>'Womens Individual Archery'})
+event7 = Event.new({'name'=>'Gymnast Rings'})
 
 event1.save
 event2.save
@@ -42,12 +42,12 @@ event6.save
 event7.save
 
 athlete1 = Athlete.new({'name' => 'Usian Bolt', 'nations_id' => nation1.id, 'event_id' => event1.id})
-athlete2 = Athlete.new({'name' => 'Justin Gatlin', 'nations_id' => nation2.id })
-athlete3 = Athlete.new({'name' => 'Max Witlock', 'nations_id' => nation3.id})
-athlete4 = Athlete.new({'name' => 'Rosannagh Maclennan', 'nations_id' => nation4.id})
-athlete5 = Athlete.new({'name' => 'Dirk Van Tichelt', 'nations_id' => nation5.id})
-athlete6 = Athlete.new({'name' => 'Hyejin Chang', 'nations_id' => nation6.id})
-athlete7 = Athlete.new({'name' => 'Eleftherios Petrounias', 'nations_id' => nation7.id})
+athlete2 = Athlete.new({'name' => 'Justin Gatlin', 'nations_id' => nation2.id, 'event_id' => event1.id })
+athlete3 = Athlete.new({'name' => 'Max Witlock', 'nations_id' => nation3.id, 'event_id' => event1.id})
+athlete4 = Athlete.new({'name' => 'Rosannagh Maclennan', 'nations_id' => nation4.id, 'event_id' => event1.id})
+athlete5 = Athlete.new({'name' => 'Dirk Van Tichelt', 'nations_id' => nation5.id, 'event_id' => event1.id})
+athlete6 = Athlete.new({'name' => 'Hyejin Chang', 'nations_id' => nation6.id, 'event_id' => event1.id})
+athlete7 = Athlete.new({'name' => 'Eleftherios Petrounias', 'nations_id' => nation7.id, 'event_id' => event1.id})
 
 athlete1.save
 athlete2.save

@@ -3,7 +3,7 @@ require_relative('../db/sql_runner')
 
 class Athlete
 
-  attr_reader :id, :name, :nation, :event  #or :nation_id
+  attr_reader :id, :name, :nation, :event_id  #or :nation_id
 
 def initialize(options)
   @id = options['id'].to_i
@@ -13,7 +13,7 @@ def initialize(options)
 end
 
 def save()
-  sql = "INSERT INTO athletes (name, nations_id, event_id ) VALUES ('#{@name}', '#{@nations_id}'), '#{@event_id}' RETURNING *"
+  sql = "INSERT INTO athletes (name, nations_id, event_id ) VALUES ('#{@name}', '#{@nations_id}', '#{@event_id}' )RETURNING *"
   athlete = SqlRunner.run(sql).first
   @id = athlete['id']
 end
