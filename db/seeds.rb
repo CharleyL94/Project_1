@@ -11,15 +11,19 @@ Nation.delete_all()
 
 nation1 = Nation.new({'name'=>'Jamaica'})
 nation2 = Nation.new({'name'=>'USA'})
+nation3 = Nation.new({'name' => 'UK'})
 
 nation1.save
 nation2.save
+nation3.save
 
 athlete1 = Athlete.new({'name' => 'Usian Bolt', 'nations_id' => nation1.id})
 athlete2 = Athlete.new({'name' => 'Justin Gatlin', 'nations_id' => nation2.id })
+athlete3 = Athlete.new({'name' => 'Max Witlock', 'nations_id' => nation3.id})
 
 athlete1.save
 athlete2.save
+athlete3.save
 
 event1 = Event.new({'name' => '100 metres', 'gold_id' => athlete1.id, 'silver_id' => athlete2.id, 'bronze' => athlete2.id})
 event2 = Event.new({'name' => 'Heptathlon', 'gold_id' => athlete2.id, 'silver_id' => athlete1.id, 'bronze' => athlete1.id})

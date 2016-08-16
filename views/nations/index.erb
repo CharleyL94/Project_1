@@ -1,7 +1,10 @@
 <div>
+<h2>Nations</h2>
+
 <% @nations.each do |nation| %>
-  Name: <a href="/nations/<%= nation.id %>"><%= nations.name %></a>  Name: <%= nation  %><br><hr>
+  Name: <a href="/nations/<%= nation.id %>"><%= nation.name %></a><hr>
 <% end %>
 
-<a href="/new">Add New Nation</a><br>
+<a href="/new">Add New Nation</a>
 </div>
+<a href="/">Home</a>

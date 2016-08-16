@@ -5,10 +5,18 @@
   <label for="name">Name:</label>
   <input type="text" name="name">
 
-  <label for="nation">Event:</label>
-  <input type="text" name="nation">
+  <label for="nation">Nation:</label>
+  <select name="nation">
+    <% @nations.each do |nation| %>
+      <option value="<%= nation.id%>"><%= nation.name %></option>
+      <%end%>
+      </select>
+
+  <!-- <input type="text" name="nation"> -->
 
   <input type='submit' value="Add Athlete!">
 </form>
+
+<a href="/">Home</a>
 
 

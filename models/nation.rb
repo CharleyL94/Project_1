@@ -11,31 +11,14 @@ class Nation
   end
 
   def save()
-    sql = "INSERT INTO nations (name) VALUES ('#{@name}' ) RETURNING *"
-    member = SqlRunner.run(sql).first
-    @id = member['id']
-  end
-
-  def initialize( options )
-    @id = options['id'].to_i
-    @name = options['name']
-  end
-
-  def save()
     sql = "INSERT INTO nations (name) VALUES ('#{@name}') RETURNING *"
     nation = SqlRunner.run(sql).first
     @id = nation['id']
   end
 
-  def athletes
-    sql = "SELECT * FROM athletes WHERE nations_id = #{@id}"
-    return SqlRunner.run(sql).map {|athlete| Athlete.new(athlete)}
-  end
-
-
   def self.find(id)
     sql = "SELECT * FROM nations WHERE id = #{id}"
-    return Nation.map_items(sql)
+    return Nation.map_item(sql)
   end
 
   def self.all()
@@ -44,7 +27,7 @@ class Nation
   end
 
   def self.delete_all()
-    sql = "DELETE FROM athletes"
+    sql = "DELETE FROM nations"
     SqlRunner.run(sql)
   end
 
@@ -59,4 +42,10 @@ class Nation
     return result.first
   end
   
+
+  def athletes
+    sql = "SELECT * FROM athletes WHERE nations_id = #{@id}"
+    return SqlRunner.run(sql).map {|athlete| Athlete.new(athlete)}
+  end
+
 end

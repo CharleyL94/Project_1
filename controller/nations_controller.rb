@@ -2,11 +2,12 @@ require_relative('../models/nation.rb')
 
 get '/nations' do
   @nations = Nation.all()
-  erb :'events/index'
+  erb (:'nations/index')
 end
 
 get '/nations/new' do
-  erb :'events/new'
+  @nations = Nation.all()
+  erb (:'nations/new')
 end
 
 get '/nations/:id' do

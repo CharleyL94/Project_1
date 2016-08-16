@@ -17,10 +17,15 @@ def save()
   @id = athlete['id']
 end
 
+def delete
+  sql = "DELETE FROM athletes WHERE id = #{@id}"
+  SqlRunner.run(sql)
+end
+
 
 def self.find(id)
   sql = "SELECT * FROM athletes WHERE id = #{id}"
-  return Athlete.map_items(sql)
+  return Athlete.map_item(sql)
 end
 
 def self.all()
