@@ -19,6 +19,7 @@ end
 
 get '/athletes/:id' do
   @athlete = Athlete.find(params['id'])
+  @nations = Nation.all
   erb(:'athletes/show')
 end
 

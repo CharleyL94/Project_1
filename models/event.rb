@@ -43,4 +43,10 @@ class Event
     return result.first
   end
 
+  #  def athlete
+  #   sql = "SELECT * FROM athletes WHERE id = #{@athletes_id}"
+  #   athlete = SqlRunner.run(sql).first
+  #   result = Athlete.new(athlete)
+  # end
+
 end

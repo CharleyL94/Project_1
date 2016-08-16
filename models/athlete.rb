@@ -9,10 +9,11 @@ def initialize(options)
   @id = options['id'].to_i
   @name = options['name']
   @nations_id = options['nations_id']
+  @event_id = options['event_id']
 end
 
 def save()
-  sql = "INSERT INTO athletes (name, nations_id ) VALUES ('#{@name}', '#{@nations_id}') RETURNING *"
+  sql = "INSERT INTO athletes (name, nations_id, event_id ) VALUES ('#{@name}', '#{@nations_id}'), '#{@event_id}' RETURNING *"
   athlete = SqlRunner.run(sql).first
   @id = athlete['id']
 end
@@ -58,7 +59,7 @@ def nation
  end
 
  def event
-  sql = "SELECT * FROM events WHERE id = #{events_id}"
+  sql = "SELECT * FROM events WHERE id = #{@event_id}"
   event = SqlRunner.run(sql).first
   result = Event.new(event)
 end
