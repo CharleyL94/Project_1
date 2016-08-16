@@ -1,7 +1,9 @@
 <b>Name:</b>
 <p><%= @athlete.name %></p>
 <b>Nation:</b>
-<p><%= @athlete.nation %></p>
+<p><%= @athlete.nation.name %></p>
+<p>Event:</p>
+<p><%= @athlete.event %></p>
 
 <a href="/athlete/<%= @athlete.id %>/edit">Edit</a>
 

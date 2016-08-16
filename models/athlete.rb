@@ -57,4 +57,10 @@ def nation
  return result
  end
 
+ def event
+  sql = "SELECT * FROM events WHERE id = #{events_id}"
+  event = SqlRunner.run(sql).first
+  result = Event.new(event)
+end
+
 end

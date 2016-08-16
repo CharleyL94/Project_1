@@ -25,22 +25,6 @@ nation5.save
 nation6.save
 nation7.save
 
-athlete1 = Athlete.new({'name' => 'Usian Bolt', 'nations_id' => nation1.id})
-athlete2 = Athlete.new({'name' => 'Justin Gatlin', 'nations_id' => nation2.id })
-athlete3 = Athlete.new({'name' => 'Max Witlock', 'nations_id' => nation3.id})
-athlete4 = Athlete.new({'name' => 'Rosannagh Maclennan', 'nations_id' => nation4.id})
-athlete5 = Athlete.new({'name' => 'Dirk Van Tichelt', 'nations_id' => nation5.id})
-athlete6 = Athlete.new({'name' => 'Hyejin Chang', 'nations_id' => nation6.id})
-athlete7 = Athlete.new({'name' => 'Eleftherios Petrounias', 'nations_id' => nation7.id})
-
-athlete1.save
-athlete2.save
-athlete3.save
-athlete4.save
-athlete5.save
-athlete6.save
-athlete7.save
-
 event1 = Event.new({'name' => '100 metres'})
 event2 = Event.new({'name' => 'Heptathlon'})
 event3 = Event.new({'name' => 'Mens Pommel Horse'})
@@ -56,6 +40,23 @@ event4.save
 event5.save
 event6.save
 event7.save
+
+athlete1 = Athlete.new({'name' => 'Usian Bolt', 'nations_id' => nation1.id, 'event_id' => event1.id})
+athlete2 = Athlete.new({'name' => 'Justin Gatlin', 'nations_id' => nation2.id })
+athlete3 = Athlete.new({'name' => 'Max Witlock', 'nations_id' => nation3.id})
+athlete4 = Athlete.new({'name' => 'Rosannagh Maclennan', 'nations_id' => nation4.id})
+athlete5 = Athlete.new({'name' => 'Dirk Van Tichelt', 'nations_id' => nation5.id})
+athlete6 = Athlete.new({'name' => 'Hyejin Chang', 'nations_id' => nation6.id})
+athlete7 = Athlete.new({'name' => 'Eleftherios Petrounias', 'nations_id' => nation7.id})
+
+athlete1.save
+athlete2.save
+athlete3.save
+athlete4.save
+athlete5.save
+athlete6.save
+athlete7.save
+
 
 binding.pry
 nil

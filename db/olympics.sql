@@ -17,9 +17,9 @@ CREATE TABLE athletes (
 CREATE TABLE events (
   id serial4 PRIMARY KEY,
   name VARCHAR(255),
-  gold_id int4 references athletes(id) ON DELETE CASCADE,
-  silver_id int4 references athletes(id) ON DELETE CASCADE,
-  brozne_id int4 references athletes(id) ON DELETE CASCADE
+  -- gold_id int4 references athletes(id) ON DELETE CASCADE,
+  -- silver_id int4 references athletes(id) ON DELETE CASCADE,
+  -- brozne_id int4 references athletes(id) ON DELETE CASCADE
 );
 
 CREATE TABLE participations (
