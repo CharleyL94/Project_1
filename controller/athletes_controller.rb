@@ -31,7 +31,7 @@ end
 post '/athletes/:id' do
 end
 
-delete 'athletes/:id/delete' do
+delete '/athletes/:id/delete' do
   @athlete = Athle.find(params[:id])
   @athlete.delete
   redirect(to('/athletes'))
