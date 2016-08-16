@@ -1,3 +1,9 @@
-<!-- <h2> <%= @event.name %></h2>
+<b>Name:</b>
+<p><%= @event.name %></p>
 
-<h3>Name: <%= @event.name %></h3> -->
+<a href="/events/<%= @event.id %>/edit">Edit</a>
+
+<form action="/events/<%= @event.id %>/delete" method="post">
+  <input type="submit" value="delete"></form>
+
+<a href="/">Home</a>
