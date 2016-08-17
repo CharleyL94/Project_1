@@ -62,9 +62,9 @@ h3 { font-family: Verdana;
 
 
 .Athletes {
-   font-family: impact;
+   /*font-family: impact;
     color: DodgerBlue;
-    font-size: 20px
+    font-size: 20px*/
 
     border-radius: 4px;
     /*background-color: gold;*/
@@ -73,7 +73,8 @@ h3 { font-family: Verdana;
     text-align: center;
     font-size: 28px;
     padding: 20px;
-    width: 200px;
+    width: 700px;
+    height: 600px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
