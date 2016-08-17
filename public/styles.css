@@ -1,9 +1,9 @@
  body {
-  background-image: (Desktop/Olympic_rings_with_transparent_rims.svg.png)
-  background-color: lightcyan;
+  background-color: white;
   padding: 10px;
   text-align: center;
-}
+  }
+
 
 h1 {
   font-family: Verdana;
@@ -13,6 +13,7 @@ h1 {
 
 h3 { font-family: Verdana;
       font-size: 20px; 
+      color: gold;
   }
 
 
@@ -29,5 +30,7 @@ h3 { font-family: Verdana;
    transition: all 0.5s;
    cursor: pointer;
    margin: 5px;
+   border-radius: 75%;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   
   }
