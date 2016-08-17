@@ -1,20 +1,21 @@
 <div class="showathlete">
-<p> Name: </p>
-<p><%= @athlete.name %></p>
-<b>Nation:</b>
-<p><%= @athlete.nation.name %></p>
-<p>Event:</p>
-<p><%= @athlete.event.name %></p>
+  <p> Name: </p>
+  <p><%= @athlete.name %></p>
+  <b>Nation:</b>
+  <p><%= @athlete.nation.name %></p>
+  <p>Event:</p>
+  <p><%= @athlete.event.name %></p>
 
-<a href="/athlete/<%= @athlete.id %>/edit">Edit</a>
+  <a href="/athlete/<%= @athlete.id %>/edit">Edit</a>
 
-<form action="/athlete/<%= @athlete.id %>/delete" method="post">
-  <input type="submit" value="delete"></form>
+  <form action="/athlete/<%= @athlete.id %>/delete" method="post">
+    <input type="submit" value="delete">
+  </form>
 
-<a href="/">Home</a>
+  <a href="/">Home</a>
 
 </div>
-  
+
 
 
 

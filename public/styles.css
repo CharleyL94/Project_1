@@ -36,14 +36,38 @@ h3 { font-family: Verdana;
 
   }
 
-
-  .Athletes p, div {
- /*   font-family: impact;
+  div{
+    /*background-color: gold;*/
+    font-family: impact;
     color: DodgerBlue;
-    font-size: 20px*/
-   
+    /*font-size: 20px*/
     border-radius: 4px;
+    /*background-color: gold;*/
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 505px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 50%;
+  }
+
+  .special_background {
     background-color: gold;
+
+  }
+
+
+.Athletes p {
+   font-family: impact;
+    color: DodgerBlue;
+    font-size: 20px
+
+    border-radius: 4px;
+    /*background-color: gold;*/
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -54,13 +78,11 @@ h3 { font-family: Verdana;
     cursor: pointer;
     margin: 5px;
     border-radius: 50%;
-    font-family: Impact
-
 }
 
 .Athletes h2, a {
   color: black
-}
+}*/
 
 .new{
   display: inline-block;
@@ -126,4 +148,9 @@ border-radius: 5%;
 
 .newnation{
   font-family: Verdana;
+}
+
+.home h1, h3{
+  color:black ;
+  text-decoration: none;
 }
