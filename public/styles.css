@@ -31,26 +31,34 @@ h3 { font-family: Verdana;
    cursor: pointer;
    margin: 5px;
    border-radius: 50%;
+   font-family: Impact
   }
 
-  .button1 {
-    font-family: Verdana;
-  }
-  :link {
-        text-decoration: none;
-    }
- :visited {
-        text-decoration: none;
-    }
- :hover {
-        text-decoration: underline;
-    }
-    :active {
-        text-decoration: underline;
-    }
-  }
 
-  .Athlete
-  {
-    font-family: Verdana;
-  }
+  .Athletes p, div {
+    font-family: impact;
+    color: DodgerBlue;
+    font-size: 20px
+
+}
+
+.Athletes h2, a {
+  color: black
+}
+
+.new{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: gold;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 50%;
+}
+

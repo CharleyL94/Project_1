@@ -1,14 +1,15 @@
-<div>
+<div class="Athletes">
 <h2> Athletes</h2>
 
   <% @athletes.each do |athlete| %>
-    Name: <%= athlete.name %>
+    Name: <%= athlete.name %> 
     Nation: <%= athlete.nation.name %>
     <a href="/athletes/<%= athlete.id%>">View</a>
    <hr>
    <% end %>
 
-   <a href="/">Home</a>
-   <a href="/athletes/new"> Add New Athlete</a>
-   
+   <a href="/" class="new">Home</a>
+   <a href="/athletes/new" class="new"> Add Athlete</a>
+   </hr>
+
 </div>
