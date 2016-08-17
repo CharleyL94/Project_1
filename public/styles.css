@@ -9,6 +9,7 @@ h1 {
   font-family: Verdana;
   font-size: 100px ;
   color: gold;
+
 }
 
 h3 { font-family: Verdana;
@@ -32,13 +33,28 @@ h3 { font-family: Verdana;
    margin: 5px;
    border-radius: 50%;
    font-family: Impact
+
   }
 
 
   .Athletes p, div {
-    font-family: impact;
+ /*   font-family: impact;
     color: DodgerBlue;
-    font-size: 20px
+    font-size: 20px*/
+   
+    border-radius: 4px;
+    background-color: gold;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 50%;
+    font-family: Impact
 
 }
 
@@ -62,3 +78,52 @@ h3 { font-family: Verdana;
   border-radius: 50%;
 }
 
+.show p {
+  font-size: 40px;
+  color:black;
+
+}
+
+.nations{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: gold;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 5%;
+}
+
+.events{
+display: inline-block;
+border-radius: 4px;
+background-color: gold;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 28px;
+padding: 20px;
+width: 200px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+border-radius: 5%;
+}
+
+.newathlete{
+  font-family: Verdana;
+}
+
+.newevent{
+  font-family: Verdana;
+}
+
+.newnation{
+  font-family: Verdana;
+}
