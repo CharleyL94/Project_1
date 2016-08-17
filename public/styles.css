@@ -1,33 +1,33 @@
  body {
+  background-image: (Desktop/Olympic_rings_with_transparent_rims.svg.png)
   background-color: lightcyan;
   padding: 10px;
   text-align: center;
 }
 
-main {
-  font-family: Verdana
-}
-/*a {
-  font-family: Verdana
-}
-a {
-    display: inline-block;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    transition: 0.3s;
-}
-
-a:hover {
-    box-shadow: 0 0 2px 1px rgba
-    (0, 140, 186, 0.5);
-}
-
-<a href="/Athletes">
-  <img src="http://images.indianexpress.com/2016/07/main112.jpg" alt="Paris">
-</a>*/
-
 h1 {
   font-family: Verdana;
   font-size: 100px ;
+  color: gold;
 }
+
+h3 { font-family: Verdana;
+      font-size: 20px; 
+  }
+
+
+ li {
+   display: inline-block;
+   border-radius: 4px;
+   background-color: gold;
+   border: none;
+   color: #FFFFFF;
+   text-align: center;
+   font-size: 28px;
+   padding: 20px;
+   width: 200px;
+   transition: all 0.5s;
+   cursor: pointer;
+   margin: 5px;
+  
+  }
